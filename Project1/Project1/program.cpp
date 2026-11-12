@@ -5,6 +5,7 @@
 // Варіант 2
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 double f(const double a, const double b, const double c); 
 int main()
@@ -20,6 +21,8 @@ int main()
 	double g = (d + e)/(1 + h * h);
 
 	cout << "Result: = " << g << endl;
+	cout << "Result = " << fixed << setprecision(4) << g << endl;
+
 	return 0;
 }
 double f(const double a, const double b, const double c) 
